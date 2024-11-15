@@ -18,10 +18,3 @@ function displayRecipes() {
   recipes.forEach((recipe, index) => {
     const recipeItem = document.createElement("li");
     recipeItem.textContent = `${recipe.name}: ${recipe.ingredients.join(", ")}`;
-    recipeList.appendChild(recipeItem);
-  });
-}
-
-// Example usage
-addRecipe("Spaghetti Bolognese", ["spaghetti", "ground beef", "tomato sauce"]);
-addRecipe("Chicken Curry", ["chicken", "curry powder", "coconut milk"]);
